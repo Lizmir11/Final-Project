@@ -47,7 +47,7 @@ function calculateBMI() {
 				`Normal : <span>${bmi}</span>`;
 				else if (bmi >= 25 && bmi < 30) 
 			result.innerHTML = 
-				`Overwight : <span>${bmi}</span>`;
+				`Overweight : <span>${bmi}</span>`;
 
 		else result.innerHTML =
 			`Obese: <span>${bmi}</span>`;
