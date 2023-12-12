@@ -1,0 +1,73 @@
+<!-- index.html file -->
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>BMI Calculator</title>
+        <link rel="stylesheet" href="BMI.css">
+        <script src="script.js"></script>
+	</head>
+        <header>
+            <h1><a href="index.html"> BMI Calculator</a></h1>
+        </header>
+        <nav>
+            <b>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="weightlosstools.html">Weight Loss Tools</a></li>
+                    <li><a href="stayactive.html">Stay Active</a></li>
+                    <li><a href="contact.html">Contact us</a></li>
+                </ul>
+            </b>
+        </nav>
+        <body>
+                <div class="container">
+                    <h1>BMI Calculator</h1>
+
+                    <!-- Option for providing height 
+                    and weight to the user-->
+                    <p>Height (in )</p>
+
+                    <input type="text" id="height" />
+
+                    <p>Weight (in lbs)</p>
+
+                    <input type="text" id="weight" />
+
+                    <button id="btn">Calculate</button>
+                    <button onclick="reload()">Reset</button>
+
+                    <section class="output">
+                    <h3>Your BMI is</h3>
+                    <p id='BMI output'></p>
+                    <p id='Message'></p>
+                   </section>
+
+                    <div id="result"></div>
+            
+                <section class="bmi-scale">
+                    <div style="--color: var(--underweight)">
+                    <h4>Underweight</h4>
+                    <p>&lt; 18.5</p>
+                    </div>
+            
+                    <div style="--color: var(--normal)">
+                    <h4>Normal</h4>
+                    <p>18.5 – 25</p>
+                    </div>
+            
+                    <div style="--color: var(--overweight)">
+                    <h4>Overweight</h4>
+                    <p>25 – 30</p>
+                    </div>
+            
+                    <div style="--color: var(--obese)">
+                    <h4>Obese</h4>
+                    <p>≥ 30</p>
+                    </div>
+                </section>
+    
+            </body>
+        </html>
+
